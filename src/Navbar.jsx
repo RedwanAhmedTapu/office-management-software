@@ -16,7 +16,7 @@ const Sidebar = ({}) => {
       const userName = loggedInUser.split('@')[0];
       setName(userName);
     }
-  }, []);
+  }, [loggedInUser]);
 
   const handleLogout = () => {
     // Clear sessionStorage or perform any other logout action

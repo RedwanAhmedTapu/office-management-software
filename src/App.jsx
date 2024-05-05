@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Employees from './pages/Employees';
 import Holidays from './pages/Holidays';
 // import Holidays from './components/Holidays';
@@ -16,8 +16,9 @@ import Navbar from "./Navbar";
 import Login from './pages/Login';
 
 function App() {
+  const base="/"
   return (
-    <Router>
+    <Router basename={base}>
       <div className="App">
         <Navbar/>
         <Routes>
